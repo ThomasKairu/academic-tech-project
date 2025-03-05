@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Computing Research Initiative</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        /* Background image styling */
+        .bg-container {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        
+        .bg-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3;
+            z-index: -1;
+        }
+        
+        /* Content container */
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        /* Header styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            width: 180px;
+            height: auto;
+        }
+        
+        /* Main content styling */
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+        
+        .text-content {
+            flex: 1;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: #1a237e;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        .highlight {
+            color: #4a148c;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            max-width: 600px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #1a237e, #4a148c);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 1rem;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Foreground image styling */
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .foreground-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            transition: transform 0.5s ease;
+        }
+        
+        .foreground-image:hover {
+            transform: scale(1.02);
+        }
+        
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 900px) {
+            main {
+                flex-direction: column;
+            }
+            
+            .text-content, .image-container {
+                width: 100%;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-container">
+        <div class="bg-image"></div>
+        
+        <div class="content">
+            <header>
+                <img src="https://img.freepik.com/free-vector/science-logo-template-design_23-2150367373.jpg?ga=GA1.1.894275589.1741170251&semt=ais_hybrid" alt="Quantum Labs Logo" class="logo">
+            </header>
+            
+            <main>
+                <div class="text-content">
+                    <h1>Advancing <span class="highlight">Quantum Computing</span> Research</h1>
+                    <p>Our interdisciplinary team is pioneering breakthrough algorithms that bridge quantum mechanics and artificial intelligence, creating the foundation for next-generation computing solutions.</p>
+                    <p>Through collaborative research and innovative approaches, we're tackling complex computational problems that were previously unsolvable with classical computing methods.</p>
+                    <a href="#" class="cta-button">Explore Our Research</a>
+                </div>
+                
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Quantum Computing Visualization" class="foreground-image">
+                </div>
+            </main>
+            
+            <footer>
+                <p>© 2025 Quantum Computing Research Initiative | A collaborative academic project</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
